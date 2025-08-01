@@ -1,0 +1,2 @@
+# Memory Numbers has no external dependencies yet
+# If you add anything like numpy or matplotlib, list it here

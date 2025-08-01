@@ -1,32 +1,65 @@
 # Memory Numbers
 
-**Memory Numbers** is a novel mathematical and symbolic framework where numbers retain a trace of their transformation history.
+Memory Numbers is a symbolic framework where numbers retain their transformation history — enabling new ways to model time, causality, entropy, and self-reflective learning.
 
-This allows modeling:
-- The arrow of time
-- Emergent entropy
-- Causality chains
-- Symbolic memory in intelligent systems
+## Summary
 
-## 🔧 Key Concepts
+Instead of forgetting how they reached a value, Memory Numbers log every transformation applied to them.
 
-- `MemoryNumber`: A number that records every operation applied to it.
-- `MemoryEntropy`: A new form of entropy based on transformation complexity.
-- `MemoryTrace`: Logs of operations that simulate causality.
+This allows:
+- Modeling of symbolic entropy and causal order
+- Simulation of time as a product of internal change
+- Development of AGI systems with transparent memory
 
-## 🧪 Applications
+## Features
 
-- AGI memory systems
-- Simulations of time and entropy
-- Symbolic machine reasoning
-- AI safety through traceability
+- `MemoryNumber`: A number that remembers how it changed
+- `MemoryTrace`: Sequence of all transformations
+- `ReflectionAgent`: A basic agent that reflects and adapts
+- Supports task solving, memory replay, and reset
 
-## 📁 Structure
+## Project Structure
 
-- `memory_numbers.py`: Core class definitions
-- `examples/`: Demos and simulations
-- `tests/`: Unit tests for framework logic
+<pre>
 
-## 🔓 License
+memory-numbers/
+├── memory_numbers.py # Core MemoryNumber class
+├── reflection_agent.py # Agent that solves tasks and reflects
+├── examples/
+│ └── simple_trace_demo.py # Quick demo of how it works
+├── tests/
+│ └── test_memory_numbers.py # Unit tests
+├── paper/
+│ └── README.md # Placeholder for theory PDF
+├── .gitignore
+├── requirements.txt
+└── README.md
 
-MIT License — free to use, modify, or extend.
+</pre>
+
+## Try It Out
+
+Run a basic demo from the project root:
+
+python -m examples.simple_trace_demo
+
+or Run Directly:
+
+python examples/simple_trace_demo.py
+
+You’ll see a number change step-by-step, and the system will trace each transformation applied.
+
+Cite This Project
+
+MemoryForgeAI. “Memory Numbers: Symbolic Tracking of Transformation History in Intelligent Systems.” GitHub, 2025.
+https://github.com/memoryforgeai/memory-numbers
+
+License
+
+This project is licensed under the MIT License.
+You're free to use, modify, and build on it — just give credit.
+
+Contact
+
+Got ideas or feedback?
+Open an issue or email us at: mfresearch.ai@gmail.com
