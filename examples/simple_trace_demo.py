@@ -1,34 +1,22 @@
 import sys
 import os
-import unittest
 
-# Ensure the parent directory is on the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from memory_numbers import MemoryNumber
 
-class TestMemoryNumber(unittest.TestCase):
-    def test_initial_value(self):
-        m = MemoryNumber(5)
-        self.assertEqual(m.value, 5)
+def main():
+    print("Starting MemoryNumber demo...\n")
 
-    def test_single_addition(self):
-        m = MemoryNumber(5)
-        m.apply(lambda x: x + 3, "add 3")
-        self.assertEqual(m.value, 8)
+    # Create a MemoryNumber and apply transformations
+    num = MemoryNumber(10)
+    num.apply(lambda x: x + 5, "add 5")
+    num.apply(lambda x: x * 2, "multiply by 2")
+    num.apply(lambda x: x - 3, "subtract 3")
 
-    def test_multiple_steps(self):
-        m = MemoryNumber(2)
-        m.apply(lambda x: x * 4, "multiply by 4")
-        m.apply(lambda x: x - 1, "subtract 1")
-        self.assertEqual(m.value, 7)
-
-    def test_reset(self):
-        m = MemoryNumber(10)
-        m.apply(lambda x: x + 1, "add 1")
-        m.reset()
-        self.assertEqual(m.value, 10)
-        self.assertEqual(len(m.memory_chain), 0)
+    # Display final result and memory trace
+    print(f"\nFinal Value: {num.value}")
+    num.trace()
 
 if __name__ == "__main__":
-    unittest.main()
+    main()
