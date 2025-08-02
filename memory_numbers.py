@@ -43,7 +43,7 @@ class MemoryNumber:
         """
         Prints a readable memory trace.
         """
-        print("🧠 Memory Trace:")
+        print("Memory Trace:")
         for i, step in enumerate(self.memory_chain):
             print(f"  Step {i+1}: {step['label']} | {step['input']} ➜ {step['output']}")
 
