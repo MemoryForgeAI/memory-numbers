@@ -1,4 +1,10 @@
+import sys
+import os
 import unittest
+
+# Ensure the parent directory is on the path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from memory_numbers import MemoryNumber
 
 class TestMemoryNumber(unittest.TestCase):
@@ -26,4 +32,3 @@ class TestMemoryNumber(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
